@@ -30,6 +30,12 @@
             color: #1e293b;
             margin-bottom: 1rem;
         }
+        .legal-section h3 {
+            font-size: 1.2rem;
+            color: #334155;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
         .legal-section p, .legal-section li {
             color: #64748b;
             line-height: 1.8;
@@ -37,6 +43,26 @@
         }
         .legal-section ul {
             padding-left: 2rem;
+        }
+        .legal-section a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .legal-section a:hover {
+            text-decoration: underline;
+        }
+        .summary-box {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .summary-box h3 {
+            color: #1e293b;
+            margin-top: 0;
+        }
+        .summary-box ul {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -58,89 +84,398 @@
     <div class="legal-container">
         <div class="legal-header">
             <h1>Privacy Policy</h1>
-            <p>Last updated: November 9, 2025</p>
+            <p>Last Updated: December 7, 2025</p>
         </div>
 
         <div class="legal-section">
-            <h2>Our Commitment to Your Privacy</h2>
             <p>
-                MileageSnaps is designed with privacy at its core. Unlike GPS-based mileage trackers, we do not track your location, record your routes, or monitor your movements. This privacy policy explains what data we collect, how we use it, and your rights.
+                MileageSnap ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the MileageSnap mobile application (the "App").
+            </p>
+            <p>
+                Please read this Privacy Policy carefully. By using MileageSnap, you agree to the collection and use of information in accordance with this policy.
             </p>
         </div>
 
         <div class="legal-section">
-            <h2>Information We Collect</h2>
-            <p><strong>Information You Provide:</strong></p>
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Information You Provide to Us</h3>
+
+            <p><strong>Account Information:</strong></p>
             <ul>
-                <li>Odometer photos you take when starting and ending shifts</li>
-                <li>Shift details: start time, end time, miles driven, and purpose (e.g., Uber, Lyft, Client)</li>
-                <li>Optional: destinations or notes you add to shifts</li>
+                <li>Email address</li>
+                <li>Phone number (if using phone authentication)</li>
+                <li>Display name (optional)</li>
+                <li>Password (encrypted)</li>
+                <li>Authentication tokens from Apple or Google (when using Sign-In with Apple/Google)</li>
             </ul>
-            <p><strong>Information We Don't Collect:</strong></p>
+
+            <p><strong>Mileage Data:</strong></p>
             <ul>
-                <li>Your location or GPS coordinates</li>
-                <li>Your driving routes or patterns</li>
-                <li>Continuous tracking data</li>
+                <li>Odometer readings</li>
+                <li>Trip dates and times</li>
+                <li>Trip purposes (business/personal)</li>
+                <li>Trip notes and descriptions</li>
+                <li>Photos of odometer readings</li>
             </ul>
-        </div>
 
-        <div class="legal-section">
-            <h2>How We Use Your Information</h2>
-            <p>We use your data solely to:</p>
+            <p><strong>App Settings:</strong></p>
             <ul>
-                <li>Calculate your mileage and tax deductions</li>
-                <li>Generate mileage reports for tax purposes</li>
-                <li>Provide app features like shift tracking and smart reminders</li>
-                <li>Improve the app experience</li>
+                <li>Preferred measurement units</li>
+                <li>Notification preferences</li>
+                <li>Dark mode settings</li>
+                <li>Backup preferences</li>
+                <li>Privacy settings</li>
+            </ul>
+
+            <h3>1.2 Information Automatically Collected</h3>
+
+            <p><strong>Device Information:</strong></p>
+            <ul>
+                <li>Device type and model</li>
+                <li>Operating system version (iOS)</li>
+                <li>App version</li>
+                <li>Device identifiers (for crash reporting)</li>
+            </ul>
+
+            <p><strong>Usage Data:</strong></p>
+            <ul>
+                <li>Features used</li>
+                <li>App performance data</li>
+                <li>Crash logs and error reports</li>
+                <li>Session duration</li>
+                <li>Interaction data</li>
+            </ul>
+
+            <h3>1.3 Information from Third Parties</h3>
+
+            <p><strong>Authentication Services:</strong></p>
+            <ul>
+                <li>When you sign in with Apple: Name and email (if you choose to share)</li>
+                <li>When you sign in with Google: Name, email, and profile picture</li>
+            </ul>
+
+            <p><strong>Cloud Services:</strong></p>
+            <ul>
+                <li>iCloud sync data (if enabled)</li>
+                <li>Firebase Cloud Storage data</li>
             </ul>
         </div>
 
         <div class="legal-section">
-            <h2>Data Storage and Security</h2>
-            <p>
-                Your data is stored locally on your device and optionally backed up to your personal iCloud account (if you enable iCloud backup in iOS Settings). We do not store your data on our own servers. Your odometer photos and shift records remain under your control.
-            </p>
+            <h2>2. How We Use Your Information</h2>
+            <p>We use your information for the following purposes:</p>
+
+            <h3>2.1 Provide and Maintain the Service</h3>
+            <ul>
+                <li>Create and manage your account</li>
+                <li>Store your mileage records</li>
+                <li>Sync data across your devices</li>
+                <li>Generate mileage reports</li>
+                <li>Process exports (PDF, CSV, Excel)</li>
+            </ul>
+
+            <h3>2.2 Improve the App</h3>
+            <ul>
+                <li>Analyze app usage patterns</li>
+                <li>Fix bugs and errors</li>
+                <li>Develop new features</li>
+                <li>Optimize app performance</li>
+            </ul>
+
+            <h3>2.3 Communicate with You</h3>
+            <ul>
+                <li>Send important service updates</li>
+                <li>Respond to your support requests</li>
+                <li>Send notification reminders (if enabled)</li>
+                <li>Provide technical assistance</li>
+            </ul>
+
+            <h3>2.4 Security and Fraud Prevention</h3>
+            <ul>
+                <li>Protect against unauthorized access</li>
+                <li>Detect and prevent fraudulent activity</li>
+                <li>Enforce our Terms of Service</li>
+                <li>Maintain app security</li>
+            </ul>
+
+            <h3>2.5 Legal Compliance</h3>
+            <ul>
+                <li>Comply with legal obligations</li>
+                <li>Respond to legal requests</li>
+                <li>Protect our rights and property</li>
+            </ul>
         </div>
 
         <div class="legal-section">
-            <h2>Data Sharing</h2>
-            <p>
-                We do not sell, rent, or share your personal data with third parties. Your mileage records, photos, and shift information are yours alone. The only exception is if required by law.
-            </p>
+            <h2>3. How We Share Your Information</h2>
+            <p>We do not sell your personal information to third parties. We may share your information only in the following circumstances:</p>
+
+            <h3>3.1 Service Providers</h3>
+            <p>We share data with trusted third-party service providers:</p>
+
+            <p><strong>Firebase (Google):</strong></p>
+            <ul>
+                <li>Authentication services</li>
+                <li>Cloud database storage</li>
+                <li>Analytics</li>
+                <li>Crash reporting</li>
+            </ul>
+
+            <p><strong>Apple:</strong></p>
+            <ul>
+                <li>iCloud sync (if enabled)</li>
+                <li>Sign in with Apple authentication</li>
+            </ul>
+
+            <p><strong>Google:</strong></p>
+            <ul>
+                <li>Google Sign-In authentication</li>
+            </ul>
+
+            <p>These providers are contractually obligated to protect your data and use it only as directed.</p>
+
+            <h3>3.2 Legal Requirements</h3>
+            <p>We may disclose your information if required to:</p>
+            <ul>
+                <li>Comply with legal obligations</li>
+                <li>Respond to valid legal requests (subpoenas, court orders)</li>
+                <li>Protect our rights and property</li>
+                <li>Investigate fraud or security issues</li>
+                <li>Protect user safety</li>
+            </ul>
+
+            <h3>3.3 Business Transfers</h3>
+            <p>If MileageSnap is involved in a merger, acquisition, or sale of assets, your information may be transferred. We will notify you before your information becomes subject to a different privacy policy.</p>
+
+            <h3>3.4 With Your Consent</h3>
+            <p>We may share your information with third parties when you explicitly consent to such sharing.</p>
         </div>
 
         <div class="legal-section">
-            <h2>Your Rights</h2>
+            <h2>4. Data Storage and Security</h2>
+
+            <h3>4.1 Where We Store Your Data</h3>
+            <p>Your data is stored:</p>
+            <ul>
+                <li><strong>Firebase Cloud Storage:</strong> Encrypted data stored on Google Cloud servers</li>
+                <li><strong>iCloud (optional):</strong> Your device's iCloud account (if sync is enabled)</li>
+                <li><strong>Local Device:</strong> Encrypted local storage on your iPhone/iPad</li>
+            </ul>
+
+            <h3>4.2 Security Measures</h3>
+            <p>We implement industry-standard security measures:</p>
+            <ul>
+                <li>End-to-end encryption for sensitive data</li>
+                <li>Secure HTTPS connections</li>
+                <li>Encrypted password storage</li>
+                <li>Firebase security rules</li>
+                <li>Regular security audits</li>
+                <li>Secure authentication tokens</li>
+            </ul>
+
+            <h3>4.3 Data Retention</h3>
+            <ul>
+                <li><strong>Active accounts:</strong> We retain your data as long as your account is active</li>
+                <li><strong>Deleted accounts:</strong> Data is permanently deleted within 30 days of account deletion</li>
+                <li><strong>Backups:</strong> Backup data is retained for up to 90 days for recovery purposes</li>
+                <li><strong>Legal requirements:</strong> We may retain certain data longer if required by law</li>
+            </ul>
+
+            <h3>4.4 Important Security Notice</h3>
+            <p>While we implement strong security measures, no method of transmission or storage is 100% secure. We cannot guarantee absolute security of your information.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>5. Your Privacy Rights</h2>
+
+            <h3>5.1 Access and Control</h3>
             <p>You have the right to:</p>
             <ul>
-                <li>Access your data at any time through the app</li>
-                <li>Export your data via CSV or PDF reports</li>
-                <li>Delete your data by uninstalling the app (this removes all local data)</li>
-                <li>Control iCloud backup settings through iOS Settings</li>
+                <li><strong>Access your data:</strong> View all personal data we have about you</li>
+                <li><strong>Update your data:</strong> Modify your account information and settings</li>
+                <li><strong>Export your data:</strong> Download your mileage records in CSV, PDF, or Excel format</li>
+                <li><strong>Delete your data:</strong> Permanently delete your account and all associated data</li>
+            </ul>
+
+            <h3>5.2 Notification Permissions</h3>
+            <p>You can control notifications:</p>
+            <ul>
+                <li><strong>Enable/Disable:</strong> Turn notifications on or off in iOS Settings</li>
+                <li><strong>Types:</strong> Choose which notification types you want to receive</li>
+                <li><strong>Timing:</strong> Set daily reminder times</li>
+            </ul>
+
+            <h3>5.3 Marketing Communications</h3>
+            <p>We do not send marketing emails. All communications are service-related and essential to your use of the App.</p>
+
+            <h3>5.4 Region-Specific Rights</h3>
+
+            <p><strong>For EU/EEA Residents (GDPR):</strong></p>
+            <ul>
+                <li>Right to access your personal data</li>
+                <li>Right to rectification of inaccurate data</li>
+                <li>Right to erasure ("right to be forgotten")</li>
+                <li>Right to restrict processing</li>
+                <li>Right to data portability</li>
+                <li>Right to object to processing</li>
+                <li>Right to withdraw consent</li>
+                <li>Right to lodge a complaint with a supervisory authority</li>
+            </ul>
+
+            <p><strong>For California Residents (CCPA):</strong></p>
+            <ul>
+                <li>Right to know what personal information is collected</li>
+                <li>Right to know if personal information is sold or disclosed</li>
+                <li>Right to say no to the sale of personal information (we don't sell data)</li>
+                <li>Right to access personal information</li>
+                <li>Right to equal service and price</li>
+                <li>Right to deletion of personal information</li>
+            </ul>
+
+            <p>To exercise your rights, contact us at <a href="mailto:info@mileagesnaps.com">info@mileagesnaps.com</a></p>
+        </div>
+
+        <div class="legal-section">
+            <h2>6. Children's Privacy</h2>
+            <p>MileageSnap is not intended for users under the age of 18. We do not knowingly collect personal information from children under 18. If you believe we have collected information from a child, please contact us immediately at <a href="mailto:info@mileagesnaps.com">info@mileagesnaps.com</a>, and we will delete it.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>7. Third-Party Links</h2>
+            <p>The App may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>8. International Data Transfers</h2>
+            <p>Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your data in accordance with this Privacy Policy and applicable laws.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>9. Cookies and Tracking Technologies</h2>
+            <p>MileageSnap does not use cookies or web tracking technologies. However, third-party services (Firebase, Google Sign-In) may use their own tracking technologies subject to their privacy policies.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>10. Do Not Track</h2>
+            <p>We do not track users across third-party websites. The App does not respond to Do Not Track (DNT) signals as it does not engage in cross-site tracking.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>11. Data Breach Notification</h2>
+            <p>In the event of a data breach that affects your personal information, we will:</p>
+            <ul>
+                <li>Notify affected users within 72 hours</li>
+                <li>Inform relevant authorities as required by law</li>
+                <li>Provide information about the breach and steps to protect yourself</li>
+                <li>Take immediate action to secure systems and prevent further breaches</li>
             </ul>
         </div>
 
         <div class="legal-section">
-            <h2>Children's Privacy</h2>
-            <p>
-                MileageSnaps is not intended for use by individuals under the age of 16. We do not knowingly collect data from children.
-            </p>
+            <h2>12. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Changes will be:</p>
+            <ul>
+                <li>Posted in the App and on our website</li>
+                <li>Effective immediately for non-material changes</li>
+                <li>Effective 30 days after notification for material changes</li>
+            </ul>
+
+            <p>We will notify you of significant changes through:</p>
+            <ul>
+                <li>In-app notification</li>
+                <li>Email notification</li>
+                <li>Update to "Last Updated" date at the top of this policy</li>
+            </ul>
+
+            <p>Your continued use of the App after changes constitutes acceptance of the updated Privacy Policy.</p>
         </div>
 
         <div class="legal-section">
-            <h2>Changes to This Policy</h2>
-            <p>
-                We may update this privacy policy from time to time. We will notify you of any significant changes through the app or via email.
-            </p>
+            <h2>13. Your Consent</h2>
+            <p>By using MileageSnap, you consent to:</p>
+            <ul>
+                <li>The collection and use of information as described in this Privacy Policy</li>
+                <li>The transfer of your information to our service providers</li>
+                <li>The storage of your data on cloud services (Firebase, iCloud)</li>
+            </ul>
         </div>
 
         <div class="legal-section">
-            <h2>Contact Us</h2>
-            <p>
-                If you have questions about this privacy policy or your data, contact us at:
-                <br><br>
-                <a href="mailto:info@mileagesnaps.com" style="color: #667eea; text-decoration: none; font-weight: 600;">info@mileagesnaps.com</a>
-            </p>
+            <h2>14. How to Contact Us</h2>
+            <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:info@mileagesnaps.com">info@mileagesnaps.com</a></li>
+                <li><strong>In-App Support:</strong> Settings > Help & Support</li>
+                <li><strong>Response Time:</strong> We aim to respond to all inquiries within 48 hours</li>
+                <li><strong>Data Subject Requests:</strong> For GDPR/CCPA requests, please include "Privacy Request" in your email subject line</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>15. Specific Disclosures</h2>
+
+            <h3>15.1 Firebase (Google Cloud)</h3>
+            <p>We use Firebase services provided by Google:</p>
+            <ul>
+                <li><strong>Firebase Authentication:</strong> Manages user sign-in and security</li>
+                <li><strong>Firebase Firestore:</strong> Stores mileage records and trip data</li>
+                <li><strong>Firebase Storage:</strong> Stores odometer photos</li>
+                <li><strong>Firebase Analytics:</strong> Tracks app usage (anonymized)</li>
+                <li><strong>Firebase Crashlytics:</strong> Reports app crashes</li>
+            </ul>
+            <p>Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+
+            <h3>15.2 Apple Services</h3>
+            <p>When using Apple services:</p>
+            <ul>
+                <li><strong>Sign in with Apple:</strong> Apple may provide a private relay email address</li>
+                <li><strong>iCloud Sync:</strong> Data is stored in your personal iCloud account</li>
+            </ul>
+            <p>Apple's Privacy Policy: <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></p>
+
+            <h3>15.3 Google Services</h3>
+            <p>When using Google Sign-In:</p>
+            <ul>
+                <li>Google provides your email, name, and profile picture</li>
+            </ul>
+            <p>Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+        </div>
+
+        <div class="legal-section">
+            <h2>16. Data Minimization</h2>
+            <p>We collect only the minimum data necessary to provide our services:</p>
+            <ul>
+                <li><strong>What we collect:</strong> Only data essential for mileage tracking</li>
+                <li><strong>What we don't collect:</strong> Unnecessary personal information, browsing history, or contacts</li>
+                <li><strong>Anonymization:</strong> Analytics data is anonymized whenever possible</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>17. Your Data, Your Control</h2>
+            <p>You have complete control over your data:</p>
+            <ul>
+                <li><strong>Export anytime:</strong> Download all your data in standard formats</li>
+                <li><strong>Delete anytime:</strong> Permanently delete your account and all data</li>
+                <li><strong>No vendor lock-in:</strong> Your data is portable and exportable</li>
+                <li><strong>Transparent:</strong> We tell you exactly what we collect and why</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <div class="summary-box">
+                <h3>Summary</h3>
+                <ul>
+                    <li>We collect only necessary information for mileage tracking</li>
+                    <li>We never sell your data</li>
+                    <li>We use encryption and security best practices</li>
+                    <li>You can export or delete your data anytime</li>
+                    <li>We comply with GDPR, CCPA, and other privacy laws</li>
+                    <li>Contact us anytime: <a href="mailto:info@mileagesnaps.com">info@mileagesnaps.com</a></li>
+                </ul>
+            </div>
+            <p style="margin-top: 2rem;"><strong>By using MileageSnap, you acknowledge that you have read and understood this Privacy Policy.</strong></p>
         </div>
     </div>
 
