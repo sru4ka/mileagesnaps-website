@@ -138,17 +138,25 @@ body {
 }
 
 .hero-screenshot {
-    max-width: 100%;
-    max-height: 600px;
+    max-width: 280px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.3);
 }
 
 .showcase-screenshot {
-    max-width: 100%;
-    max-height: 500px;
+    max-width: 240px;
+    height: auto;
     border-radius: 16px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.logo-icon {
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .btn {
@@ -1058,11 +1066,11 @@ body {
     }
 
     .hero-screenshot {
-        max-height: 400px;
+        max-width: 220px;
     }
 
     .showcase-screenshot {
-        max-height: 350px;
+        max-width: 200px;
     }
 
     .stats-grid {
