@@ -137,6 +137,20 @@ body {
     align-items: center;
 }
 
+.hero-screenshot {
+    max-width: 100%;
+    max-height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.showcase-screenshot {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
 .btn {
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -1041,6 +1055,14 @@ body {
 
     .showcase-image {
         order: 3 !important;
+    }
+
+    .hero-screenshot {
+        max-height: 400px;
+    }
+
+    .showcase-screenshot {
+        max-height: 350px;
     }
 
     .stats-grid {
