@@ -96,7 +96,7 @@ body {
 .hero {
     background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
     color: white;
-    padding: 2rem 0 3rem;
+    padding: 1rem 0 1.5rem;
 }
 
 .hero-content {
@@ -138,10 +138,10 @@ body {
 }
 
 .hero-screenshot {
-    max-width: 600px;
+    max-width: 700px;
     height: auto;
     transform: rotate(5deg);
-    margin-top: -40px;
+    margin-top: -80px;
 }
 
 .showcase-screenshot {
