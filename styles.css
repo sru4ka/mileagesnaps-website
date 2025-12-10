@@ -355,7 +355,9 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    text-align: center;
 }
 
 .feature-card:hover {
@@ -364,22 +366,10 @@ body {
     border-color: #14b8a6;
 }
 
-.feature-card {
-    border: 1px solid #e2e8f0;
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-}
-
 .feature-icon {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #e6fffa 0%, #ccfbf1 100%);
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.15);
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .feature-card h3 {
@@ -470,17 +460,8 @@ body {
 
 .benefit-icon {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #e6fffa 0%, #ccfbf1 100%);
-    border-radius: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.15);
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .benefit-item h3 {
