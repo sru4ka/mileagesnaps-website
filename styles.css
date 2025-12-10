@@ -138,28 +138,28 @@ body {
 }
 
 .hero-screenshot {
-    max-width: 280px;
+    max-width: 450px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.3);
 }
 
 .showcase-screenshot {
-    max-width: 240px;
+    max-width: 380px;
     height: auto;
     border-radius: 16px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .showcase-video {
-    max-width: 240px;
+    max-width: 380px;
     height: auto;
     border-radius: 16px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .step-image {
-    max-width: 120px;
+    max-width: 200px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -1080,19 +1080,19 @@ body {
     }
 
     .hero-screenshot {
-        max-width: 220px;
+        max-width: 320px;
     }
 
     .showcase-screenshot {
-        max-width: 200px;
+        max-width: 280px;
     }
 
     .showcase-video {
-        max-width: 200px;
+        max-width: 280px;
     }
 
     .step-image {
-        max-width: 100px;
+        max-width: 150px;
     }
 
     .stats-grid {
