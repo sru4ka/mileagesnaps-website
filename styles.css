@@ -834,6 +834,13 @@ body {
     order: 1;
 }
 
+.step-detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
 .step-badge {
     background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
     color: white;
