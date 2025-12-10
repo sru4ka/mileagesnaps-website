@@ -138,9 +138,10 @@ body {
 }
 
 .hero-screenshot {
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
     transform: rotate(5deg);
+    margin-top: -40px;
 }
 
 .showcase-screenshot {
@@ -677,7 +678,15 @@ body {
 }
 
 .comparison-feature {
-    /* Empty space for alignment */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.comparison-feature h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .comparison-column {
