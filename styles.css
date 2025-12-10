@@ -138,10 +138,11 @@ body {
 }
 
 .hero-screenshot {
-    max-width: 450px;
+    max-width: 550px;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    transform: rotate(5deg);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
 }
 
 .showcase-screenshot {
@@ -832,6 +833,13 @@ body {
 
 .step-detail.reverse .step-image {
     order: 1;
+}
+
+.step-detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .step-badge {
