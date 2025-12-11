@@ -138,14 +138,14 @@ body {
 .hero-note {
     font-size: 0.9rem;
     color: #64748b;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -1rem;
+    margin-top: 1rem;
 }
 
 .hero-screenshot {
