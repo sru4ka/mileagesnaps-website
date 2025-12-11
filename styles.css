@@ -96,15 +96,18 @@ body {
 .hero {
     background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
     color: white;
-    padding: 0.5rem 0 0;
+    padding: 2rem 0;
     overflow: visible;
+    min-height: 350px;
+    max-height: 400px;
 }
 
 .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
 }
 
 .hero-text h1 {
@@ -135,15 +138,16 @@ body {
 .hero-image {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
 }
 
 .hero-screenshot {
-    max-width: 550px;
+    max-width: 500px;
     height: auto;
     transform: rotate(5deg);
-    margin-top: -120px;
-    margin-bottom: -60px;
+    position: relative;
+    top: -60px;
 }
 
 .showcase-screenshot {
@@ -1174,6 +1178,7 @@ body {
 
     .hero-screenshot {
         max-width: 320px;
+        top: 0;
     }
 
     .showcase-screenshot {
