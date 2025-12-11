@@ -318,18 +318,23 @@ body {
 }
 
 .showcase-number {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 0.25rem;
-    font-size: 1rem;
-    font-weight: 600;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
     color: #14b8a6;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .showcase-number::before {
     content: "📍";
-    font-size: 0.9rem;
+    font-size: 1.5rem;
+}
+
+.showcase-content {
+    text-align: center;
 }
 
 .showcase-content h3 {
