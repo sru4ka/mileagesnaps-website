@@ -110,6 +110,8 @@ body {
 .hero-text {
     max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .hero-text h1 {
@@ -139,13 +141,14 @@ body {
     font-size: 0.9rem;
     color: #64748b;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -2rem;
+    margin-top: 0.5rem;
 }
 
 .hero-screenshot {
