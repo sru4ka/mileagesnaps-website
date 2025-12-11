@@ -98,8 +98,8 @@ body {
     color: white;
     padding: 2rem 0;
     overflow: visible;
-    min-height: 350px;
-    max-height: 400px;
+    min-height: 380px;
+    max-height: 450px;
 }
 
 .hero-content {
@@ -147,7 +147,7 @@ body {
     height: auto;
     transform: rotate(5deg);
     position: relative;
-    top: -60px;
+    top: -120px;
 }
 
 .showcase-screenshot {
