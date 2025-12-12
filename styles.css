@@ -1261,7 +1261,12 @@ body {
     }
 
     .step-image {
-        max-width: 150px;
+        max-width: 250px;
+    }
+
+    .step {
+        min-width: calc(100vw - 60px);
+        max-width: calc(100vw - 60px);
     }
 
     .stats-grid {
