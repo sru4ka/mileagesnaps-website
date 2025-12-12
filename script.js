@@ -40,11 +40,44 @@ const observer = new IntersectionObserver(function(entries) {
 // Observe feature cards and steps
 document.addEventListener('DOMContentLoaded', function() {
     const animatedElements = document.querySelectorAll('.feature-card, .step, .benefit-item');
-    
+
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
+
+    // Carousel dots functionality
+    const carousel = document.querySelector('.steps-carousel');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+
+    if (carousel && dots.length > 0) {
+        carousel.addEventListener('scroll', function() {
+            const scrollLeft = carousel.scrollLeft;
+            const scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+            const scrollPercent = scrollLeft / scrollWidth;
+
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+            });
+
+            if (scrollPercent < 0.5) {
+                dots[0].classList.add('active');
+            } else {
+                dots[1].classList.add('active');
+            }
+        });
+
+        // Click on dots to scroll
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', function() {
+                const scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+                carousel.scrollTo({
+                    left: index === 0 ? 0 : scrollWidth,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    }
 });
