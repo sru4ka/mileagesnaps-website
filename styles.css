@@ -716,11 +716,24 @@ body {
     background: white;
 }
 
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+.testimonial-carousel {
     margin-top: 3rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-track {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 1rem;
 }
 
 .testimonial-card {
@@ -729,11 +742,39 @@ body {
     border-radius: 12px;
     border-left: 4px solid #14b8a6;
     transition: transform 0.3s, box-shadow 0.3s;
+    min-width: calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+    scroll-snap-align: start;
+    flex-shrink: 0;
 }
 
 .testimonial-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+}
+
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.testimonial-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d1d5db;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.testimonial-dots .dot.active {
+    background: #14b8a6;
+}
+
+.testimonial-dots .dot:nth-child(n+3) {
+    display: none;
 }
 
 .stars {
@@ -1210,12 +1251,21 @@ body {
     }
 
     .hero-image {
-        margin-top: -20px;
+        margin-top: -40px;
     }
 
     .hero-screenshot {
-        max-width: 90%;
-        width: 90%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        gap: 0.75rem;
     }
     
     .nav-links {
@@ -1279,6 +1329,15 @@ body {
 
     .carousel-dots .dot:nth-child(3),
     .carousel-dots .dot:nth-child(4) {
+        display: inline-block;
+    }
+
+    .testimonial-card {
+        min-width: calc(100vw - 60px);
+        max-width: calc(100vw - 60px);
+    }
+
+    .testimonial-dots .dot:nth-child(n+3) {
         display: inline-block;
     }
 
