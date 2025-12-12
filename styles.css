@@ -461,17 +461,20 @@ body {
 
 .steps-track {
     display: flex;
-    gap: 2rem;
-    width: max-content;
+    gap: 1.5rem;
+    padding: 0 1rem;
 }
 
 .step {
     text-align: center;
-    padding: 1.5rem;
-    min-width: calc((100vw - 140px) / 3);
-    max-width: calc((100vw - 140px) / 3);
+    padding: 1.5rem 1rem;
+    min-width: calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
     scroll-snap-align: start;
     flex-shrink: 0;
+    background: #f8fafc;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .step-visual {
@@ -479,11 +482,11 @@ body {
 }
 
 .step-image {
-    max-width: 280px;
-    width: 280px;
+    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 .step-number {
