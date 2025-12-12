@@ -467,9 +467,9 @@ body {
 
 .step {
     text-align: center;
-    padding: 2rem;
-    min-width: 320px;
-    max-width: 320px;
+    padding: 1.5rem;
+    min-width: calc((100vw - 140px) / 3);
+    max-width: calc((100vw - 140px) / 3);
     scroll-snap-align: start;
     flex-shrink: 0;
 }
@@ -510,12 +510,24 @@ body {
     color: #64748b;
 }
 
-.carousel-hint {
-    text-align: center;
-    color: #14b8a6;
-    font-weight: 600;
-    margin-top: 1rem;
-    font-size: 0.95rem;
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d1d5db;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-dots .dot.active {
+    background: #14b8a6;
 }
 
 /* Benefits Section */
