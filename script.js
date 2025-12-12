@@ -78,4 +78,35 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // Testimonial carousel dots functionality
+    const testimonialCarousel = document.querySelector('.testimonial-carousel');
+    const testimonialDots = document.querySelectorAll('.testimonial-dots .dot');
+    const testimonialCards = document.querySelectorAll('.testimonial-track .testimonial-card');
+
+    if (testimonialCarousel && testimonialDots.length > 0 && testimonialCards.length > 0) {
+        testimonialCarousel.addEventListener('scroll', function() {
+            const scrollLeft = testimonialCarousel.scrollLeft;
+            const cardWidth = testimonialCards[0].offsetWidth + 24;
+            const currentCard = Math.round(scrollLeft / cardWidth);
+
+            testimonialDots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (index === currentCard) {
+                    dot.classList.add('active');
+                }
+            });
+        });
+
+        // Click on dots to scroll
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', function() {
+                const cardWidth = testimonialCards[0].offsetWidth + 24;
+                testimonialCarousel.scrollTo({
+                    left: index * cardWidth,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    }
 });
