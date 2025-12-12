@@ -450,9 +450,11 @@ body {
     margin-top: 3rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     scrollbar-width: none;
     -ms-overflow-style: none;
     padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
 }
 
 .steps-carousel::-webkit-scrollbar {
