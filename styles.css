@@ -446,20 +446,44 @@ body {
     background: white;
 }
 
-.steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+.steps-carousel {
     margin-top: 3rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 1rem;
+}
+
+.steps-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.steps-track {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
 }
 
 .step {
     text-align: center;
     padding: 2rem;
+    min-width: 320px;
+    max-width: 320px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
 }
 
 .step-visual {
     margin-bottom: 1.5rem;
+}
+
+.step-image {
+    max-width: 280px;
+    width: 280px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .step-number {
@@ -484,6 +508,14 @@ body {
 
 .step p {
     color: #64748b;
+}
+
+.carousel-hint {
+    text-align: center;
+    color: #14b8a6;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 0.95rem;
 }
 
 /* Benefits Section */
