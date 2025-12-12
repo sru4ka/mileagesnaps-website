@@ -51,30 +51,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // Carousel dots functionality
     const carousel = document.querySelector('.steps-carousel');
     const dots = document.querySelectorAll('.carousel-dots .dot');
+    const steps = document.querySelectorAll('.steps-track .step');
 
-    if (carousel && dots.length > 0) {
+    if (carousel && dots.length > 0 && steps.length > 0) {
         carousel.addEventListener('scroll', function() {
             const scrollLeft = carousel.scrollLeft;
-            const scrollWidth = carousel.scrollWidth - carousel.clientWidth;
-            const scrollPercent = scrollLeft / scrollWidth;
+            const stepWidth = steps[0].offsetWidth + 24; // width + gap
+            const currentStep = Math.round(scrollLeft / stepWidth);
 
             dots.forEach((dot, index) => {
                 dot.classList.remove('active');
+                if (index === currentStep) {
+                    dot.classList.add('active');
+                }
             });
-
-            if (scrollPercent < 0.5) {
-                dots[0].classList.add('active');
-            } else {
-                dots[1].classList.add('active');
-            }
         });
 
         // Click on dots to scroll
         dots.forEach((dot, index) => {
             dot.addEventListener('click', function() {
-                const scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+                const stepWidth = steps[0].offsetWidth + 24;
                 carousel.scrollTo({
-                    left: index === 0 ? 0 : scrollWidth,
+                    left: index * stepWidth,
                     behavior: 'smooth'
                 });
             });
