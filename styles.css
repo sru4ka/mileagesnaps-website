@@ -535,6 +535,11 @@ body {
     background: #14b8a6;
 }
 
+.carousel-dots .dot:nth-child(3),
+.carousel-dots .dot:nth-child(4) {
+    display: none;
+}
+
 /* Benefits Section */
 .benefits {
     padding: 5rem 0;
@@ -1205,11 +1210,12 @@ body {
     }
 
     .hero-image {
-        margin-top: 1rem;
+        margin-top: -20px;
     }
 
     .hero-screenshot {
-        max-width: 350px;
+        max-width: 90%;
+        width: 90%;
     }
     
     .nav-links {
@@ -1261,12 +1267,19 @@ body {
     }
 
     .step-image {
-        max-width: 250px;
+        max-width: 100%;
+        width: 100%;
     }
 
     .step {
         min-width: calc(100vw - 60px);
         max-width: calc(100vw - 60px);
+        padding: 1.5rem;
+    }
+
+    .carousel-dots .dot:nth-child(3),
+    .carousel-dots .dot:nth-child(4) {
+        display: inline-block;
     }
 
     .stats-grid {
