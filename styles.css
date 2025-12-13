@@ -1360,17 +1360,35 @@ body {
 
     .comparison-header,
     .comparison-row {
-        grid-template-columns: 1fr;
-        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .comparison-feature,
+    .feature-name {
+        display: none;
     }
 
     .comparison-column {
-        margin-bottom: 1rem;
+        padding: 0.75rem;
+    }
+
+    .comparison-column h3 {
+        font-size: 1.1rem;
+    }
+
+    .column-price {
+        font-size: 0.9rem;
     }
 
     .feature-value {
-        text-align: left;
-        padding: 0.5rem 0;
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 0.25rem;
+    }
+
+    .comparison-row {
+        padding: 1rem;
     }
 
     .faq-grid {
