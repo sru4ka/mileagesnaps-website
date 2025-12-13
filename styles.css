@@ -110,22 +110,28 @@ body {
 .hero-text {
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 0;
-    margin-bottom: 0;
+}
+
+.hero-tagline {
+    color: #14b8a6;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .hero-text h1 {
-    font-size: 4.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
     font-weight: 800;
     line-height: 1.05;
-    color: #14b8a6;
-    letter-spacing: -0.02em;
+    color: #1e293b;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
     color: #64748b;
     line-height: 1.6;
 }
@@ -133,15 +139,7 @@ body {
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    margin-bottom: 0.5rem;
     justify-content: center;
-}
-
-.hero-note {
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .hero-image {
@@ -1233,43 +1231,36 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
+    .hero-tagline {
+        font-size: 0.85rem;
     }
-    
+
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
     }
 
     .hero-buttons {
         justify-content: center;
-    }
-
-    .hero-image {
-        margin-top: -80px;
-        display: flex;
-        justify-content: center;
-        overflow: visible;
-    }
-
-    .hero-screenshot {
-        max-width: 140%;
-        width: 140%;
-        margin-left: 0;
+        gap: 0.75rem;
     }
 
     .btn {
-        padding: 0.6rem 1.5rem;
+        padding: 0.6rem 1.25rem;
         font-size: 0.9rem;
     }
 
-    .hero-buttons {
-        gap: 0.75rem;
+    .hero-image {
+        margin-top: -60px;
+    }
+
+    .hero-screenshot {
+        max-width: 130%;
+        width: 130%;
     }
 
     .stats-grid {
