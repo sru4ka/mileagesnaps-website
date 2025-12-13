@@ -182,12 +182,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: -80px;
     pointer-events: none;
 }
 
 .hero-screenshot {
-    max-width: 500px;
+    max-width: 700px;
     height: auto;
 }
 
@@ -1316,6 +1316,10 @@ body {
     
     .mobile-menu-btn {
         display: flex;
+    }
+
+    .nav-links .cta-button {
+        display: none;
     }
 
     .nav-links {
