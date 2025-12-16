@@ -183,7 +183,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    transform: translateY(-80px);
+    transform: translateY(-120px);
     pointer-events: none;
 }
 
@@ -1269,6 +1269,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        padding: 1rem 0 0;
+    }
+
     .hero-tagline {
         font-size: 0.85rem;
     }
