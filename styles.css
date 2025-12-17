@@ -1025,6 +1025,12 @@ body {
     margin-bottom: 1rem;
 }
 
+.page-hero p,
+.page-hero .hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+}
+
 .detailed-steps {
     padding: 5rem 0;
 }
