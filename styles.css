@@ -182,8 +182,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
-    transform: translateY(-80px);
+    margin-top: -150px;
     pointer-events: none;
 }
 
@@ -1269,6 +1268,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        padding: 1rem 0 0;
+    }
+
     .hero-tagline {
         font-size: 0.85rem;
     }
@@ -1293,8 +1296,7 @@ body {
     }
 
     .hero-image {
-        margin-top: 0;
-        transform: translateY(-100px);
+        margin-top: -120px;
         pointer-events: none;
     }
 
